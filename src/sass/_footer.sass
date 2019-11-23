@@ -1,0 +1,20 @@
+.footer    
+    .footer__wrapper        
+        @include flex-style(space-between, center)
+        border-top: 1px solid $footer-color 
+        padding-top: 33px
+        padding-bottom: 41px       
+        .footer__social
+            display: flex
+            .footer__social-item
+                margin-right: 22px
+                .footer__social-link
+                    display: block
+                    color: $footer-color
+                    transition: color .3s ease
+                    &:hover
+                        color: darken($footer-color, 5%)
+        .footer__copyrights
+            @include text-decor(13px, 60px, 400, $footer-color)            
+            font-family: "Open Sans"
+                    

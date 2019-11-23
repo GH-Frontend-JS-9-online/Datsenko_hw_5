@@ -1,0 +1,70 @@
+.header
+    background: url('../img/header-bg.png') no-repeat center top / cover
+    .header__top-nav
+        @include flex-style(space-between, center)       
+        .top-nav__logo
+            @include text-decor(20px, 63.95px, 700, $white)
+            text-decoration: none           
+            font-family: Domine                    
+            letter-spacing: 0.3px
+            background:  $red
+            padding: 43px 14px 0
+            border-bottom-right-radius: 7px
+            border-bottom-left-radius: 7px
+            transition: color .3s ease
+            &:hover
+                background: darken( $red, 5%)
+            span               
+                color: #314a5b
+        .top-nav__menu
+            margin-left: auto
+            display: flex
+            .top-nav__menu-item
+                margin-right: 31px
+                .top-nav__menu-link
+                    @include text-decor(14px, 85px, 400, #263742)
+                    text-decoration: none                   
+                    font-family: Montserrat                   
+                    text-transform: uppercase
+                    transition: color .3s ease
+                    &:hover
+                        color: darken(#263742, 5%)
+        .top-nav__socials-icons
+            display: flex
+            .top-nav__socials-icons_item
+                .top-nav__socials-icons_link
+                    @include text-decor(14px, 85px, 400,  $red)
+                    margin-left: 23px
+                    text-decoration: none                   
+                    font-family: Montserrat                   
+                    transition: color .3s ease
+                    &:hover
+                        color: darken( $red, 5%)
+    .header__offer
+        margin-top: 306px        
+        .header__offer-title
+            @include text-decor(48px, 53px, 700, #314a5b)           
+            font-family: Montserrat           
+            text-transform: uppercase           
+            letter-spacing: -1.44px
+            padding-bottom: 26px            
+            span
+                color:  $red
+                letter-spacing: -1.44px
+        .header__offer-text
+            @include text-decor(20px, 40.35px, 400, #314a5b)          
+            font-family: "Open Sans"          
+            padding-bottom: 41px        
+        .header__offer-button
+            @include text-decor(15px, 48.38px, 700, $white)            
+            display: inline-block
+            text-decoration: none
+            font-family: "Open Sans"          
+            text-transform: uppercase
+            padding: 25px 42px
+            background: $red
+            border-radius: 7px
+            transition: color .3s ease
+            margin-bottom: 383px
+            &:hover
+                background: darken( $red, 5%)    

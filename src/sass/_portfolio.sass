@@ -1,0 +1,33 @@
+.portfolio
+    .portfolio__wrapper
+        @include flex-style(flex-start, center)
+        padding: 104px 0
+        .portfolio__offer
+            margin-left: 81px
+            .portfolio__offer-title
+                @include text-decor(40px, 46px, 700, $light-black)                
+                font-family: Montserrat               
+                text-transform: uppercase                
+                letter-spacing: -1.2px
+                span
+                    color: $red
+                    letter-spacing: -1.2px
+            .portfolio__offer-subtitle
+                @include text-decor(16px, 20px, 400, $light-black)
+                padding-top: 17px
+                padding-bottom: 29px                
+                font-family: "Open Sans"                
+            .portfolio__offer-text
+                @include text-decor(15px, 22px, 400, $grey)
+                padding-bottom: 45px                
+                font-family: "Open Sans"               
+            .portfolio__offer-link
+                @include text-decor(14px, 20px, 400, $red)                
+                font-family: Montserrat
+                text-decoration: none               
+                text-transform: uppercase
+                &::after
+                    @include arrow
+
+
+

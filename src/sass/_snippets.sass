@@ -1,0 +1,26 @@
+.snippets
+    .snippets__wrapper
+        @include flex-style(flex-start, center)
+        padding-top: 82px
+        .snippets__deposit
+            margin-right: 69px
+            .snippets__deposit-title
+                @include text-decor(26px, 26px, 700, #465065)               
+                font-family: Montserrat               
+                text-transform: uppercase
+                span
+                    color: $red
+            .snippets__deposit-text
+                @include text-decor(15px, 22px, 400, $grey)
+                padding: 28px 0                
+                font-family: "Open Sans"
+            .snippets__deposit-link
+                @include text-decor(14px, 20px, 400, $red) 
+                text-decoration: none
+                text-transform: uppercase               
+                font-family: Montserrat
+                &::after
+                    @include arrow
+                
+                  
+               
