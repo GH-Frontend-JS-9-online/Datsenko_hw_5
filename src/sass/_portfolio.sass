@@ -3,7 +3,7 @@
         @include flex-style(flex-start, center)
         padding: 104px 0
         .portfolio__offer
-            margin-left: 81px
+            //margin-left: 81px
             .portfolio__offer-title
                 @include text-decor(40px, 46px, 700, $light-black)                
                 font-family: Montserrat               
@@ -29,14 +29,21 @@
                 &::after
                     @include arrow
 
+@media screen and ( min-width:  1200px)
+    .portfolio
+        .portfolio__wrapper
+            justify-content: space-between            
+            padding: 54px 0           
+            .portfolio__offer               
+                width: 40%
+                margin-right: 15%
 
 @media screen and ( max-width:  1199px)
     .portfolio
         .portfolio__wrapper            
             padding: 54px 0           
-            .portfolio__offer                
-                margin-left: 0
-                width: 40%
+            .portfolio__offer               
+                width: 30%
 
 @media screen and ( max-width:  768px)
     .portfolio
