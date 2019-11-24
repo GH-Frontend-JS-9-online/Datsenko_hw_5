@@ -40,6 +40,14 @@
                     transition: color .3s ease
                     &:hover
                         color: darken( $red, 5%)
+        .top-nav__toggle
+            @include text-decor(20px, 85px, 400, #263742)
+            background: transparent
+            border: none
+            cursor: pointer
+            display: none
+            &:focus
+                outline: none                
     .header__offer
         margin-top: 306px        
         .header__offer-title
@@ -68,3 +76,23 @@
             margin-bottom: 383px
             &:hover
                 background: darken( $red, 5%)    
+
+
+@media screen and ( max-width:  768px)
+    .header
+        .header__top-nav
+            .top-nav__menu, .top-nav__socials-icons
+                display: none
+            .top-nav__toggle
+                display: block
+        .header__offer
+            text-align: center
+
+@media screen and ( max-width:  540px)
+    .header
+        .header__top-nav                   
+        .header__offer
+            .header__offer-title
+                font-size: 38px
+                  
+

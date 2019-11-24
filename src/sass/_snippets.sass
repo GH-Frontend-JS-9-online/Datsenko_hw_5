@@ -1,8 +1,9 @@
 .snippets
     .snippets__wrapper
-        @include flex-style(flex-start, center)
+        @include flex-style(space-between, center)        
         padding-top: 82px
         .snippets__deposit
+            width: 20%
             margin-right: 69px
             .snippets__deposit-title
                 @include text-decor(26px, 26px, 700, #465065)               
@@ -24,3 +25,17 @@
                 
                   
                
+@media screen and ( max-width: 1199px )
+    .snippets
+        .snippets__wrapper                        
+            .snippets__deposit
+                width: 30%
+                margin: 10px 0
+
+@media screen and ( max-width: 768px )
+    .snippets
+        .snippets__wrapper                                
+            .snippets__deposit
+                text-align: center
+                width: 100%
+                
